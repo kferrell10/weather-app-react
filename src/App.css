@@ -48,3 +48,8 @@
   color: #638068;
   text-decoration: none;
 }
+
+.Mousetype a:hover {
+  color: #46b859;
+  text-decoration: none;
+}
