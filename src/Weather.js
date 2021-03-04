@@ -12,6 +12,6 @@ export default function Weather(props) {
     let apiUrl = `${apiEndpoint}?q=${props.city}&appid=${apiKey}&units=${units}`;
 
     axios.get(apiUrl).then(handleResponse);
-    return (<Loader type="Bars" color="#404040" height={50} width={50} />)
+    return (<Loader type="Bars" color="orange" height={50} width={50} />)
     
 }
