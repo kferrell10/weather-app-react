@@ -7,7 +7,7 @@
 font-family: 'Great Vibes', cursive; 
 font-family: 'Parisienne', cursive;*/
 
-body {
+.container {
   background-color: #dcd9d4;
   background-image: linear-gradient(
       to bottom,
