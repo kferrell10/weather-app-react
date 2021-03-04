@@ -40,8 +40,11 @@
 .Mousetype {
   font-size: 12px;
   color: #a0a0a0;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 2px;
 }
 
 .Mousetype a {
-  font-size: 12px;
+  color: #638068;
+  text-decoration: none;
 }
