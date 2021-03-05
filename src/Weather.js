@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import "./Weather.css";
+
 export default function Weather() {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
@@ -34,7 +36,7 @@ export default function Weather() {
 
   let form = (
     <form onSubmit={handleSubmit}>
-      <div className="row">
+      <div className="row Weather">
         <div className="col-9">
           <input
             type="search"
