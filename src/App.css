@@ -1,13 +1,6 @@
 .App {
   text-align: center;
   margin-top: 30px;
-}
-
-/* font-family: 'EB Garamond', serif;
-font-family: 'Great Vibes', cursive; 
-font-family: 'Parisienne', cursive;*/
-
-.container {
   background-color: #dcd9d4;
   background-image: linear-gradient(
       to bottom,
@@ -22,6 +15,13 @@ font-family: 'Parisienne', cursive;*/
   background-blend-mode: soft-light, screen;
   border: 1px solid #a0a0a0;
   border-radius: 3px;
+}
+
+/* font-family: 'EB Garamond', serif;
+font-family: 'Great Vibes', cursive; 
+font-family: 'Parisienne', cursive;*/
+
+.container {
   padding: 30px;
 }
 
