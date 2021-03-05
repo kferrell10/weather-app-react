@@ -1,6 +1,10 @@
+body {
+  background-color: #404040;
+}
+
 .App {
   text-align: center;
-  margin-top: 30px;
+  margin: 30px;
   background-color: #dcd9d4;
   background-image: linear-gradient(
       to bottom,
