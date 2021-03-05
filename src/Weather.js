@@ -54,20 +54,29 @@ export default function Weather() {
 
   if (loaded) {
     return (
-      <div>
-        {form}
-        <ul className="weatherReport">
-          <li>
-            <strong>The weather in {city} is:</strong>
-          </li>
-          <li>Temperature: {Math.round(weather.temperature)}˚C</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-          <li>
-            <img src={weather.icon} alt={weather.description} />
-          </li>
-        </ul>
+      <div className="row">
+        <div className="col-12">
+          {form}
+            
+            <div className="row">
+              <div className="col-6">
+                <p>The weather in {city} is:</p>
+                <h1> {Math.round(weather.temperature)}˚C</h1>
+              </div>
+              <div className="col-6">
+                <img src={weather.icon} alt={weather.description} />
+                <p>Description: {weather.description}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">  
+                <ul className="weatherReport">
+                  <li>Humidity: {weather.humidity}%</li>
+                  <li>Wind: {weather.wind}km/h</li>
+                </ul>
+              </div>
+            </div>
+        </div>
       </div>
     );
   } else {
