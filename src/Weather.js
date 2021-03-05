@@ -64,7 +64,7 @@ export default function Weather() {
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
-                <p>Description: {weather.description}</p>
+                <p>{weather.description}</p>
               </div>
             </div>
             <div className="row">
