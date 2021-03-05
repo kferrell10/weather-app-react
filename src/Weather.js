@@ -36,7 +36,6 @@ export default function Weather() {
 
   let form = (
     <form onSubmit={handleSubmit}>
-      <div className="Weather">
         <div className="row">
           <div className="col-9">
             <input
@@ -50,7 +49,6 @@ export default function Weather() {
             <input type="submit" value="Search" className="btn btn-primary" />
           </div>
         </div>
-      </div>
     </form>
   );
 
