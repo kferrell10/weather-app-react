@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import "./Weather.css";
+import "./App.css";
 
 export default function Weather() {
   let [city, setCity] = useState("");
@@ -48,20 +48,22 @@ export default function Weather() {
           <div className="col-3">
             <input type="submit" value="Search" className="btn btn-primary" />
           </div>
-          <div>
-        <ul className="weatherReport">
-          <li>
-            <strong>The weather in London is:</strong>
-          </li>
-          <li>Temperature: {Math.round(weather.temperature)}˚C</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-          <li>
-            <img src={weather.icon} alt={weather.description} />
-          </li>
-        </ul>
-      </div>
+          <div  className="row">
+            <div className="col-12">
+              <ul className="weatherReport">
+              <li>
+                <strong>The weather in London is:</strong>
+              </li>
+              <li>Temperature: {Math.round(weather.temperature)}˚C</li>
+              <li>Description: {weather.description}</li>
+              <li>Humidity: {weather.humidity}%</li>
+              <li>Wind: {weather.wind}km/h</li>
+              <li>
+                <img src={weather.icon} alt={weather.description} />
+              </li>
+              </ul>
+            </div>
+          </div>
         </div>
     </form>
   );
