@@ -57,7 +57,6 @@ export default function Weather() {
       <div className="row">
         <div className="col-12">
           {form}
-            
             <div className="row">
               <div className="col-6">
                 <p>The weather in {city} is:</p>
@@ -77,9 +76,35 @@ export default function Weather() {
               </div>
             </div>
         </div>
+
       </div>
     );
   } else {
-    return form;
+    return (
+      <div className="row">
+        <div className="col-12">
+          {form}
+            <div className="row">
+              <div className="col-6">
+                <p>The weather in London is:</p>
+                <h1> 10˚C</h1>
+              </div>
+              <div className="col-6">
+                <img src={weather.icon.cloudy} alt={weather.description} />
+                <p>Description: Cloudy</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">  
+                <ul className="weatherReport">
+                  <li>Humidity: 10%</li>
+                  <li>Wind: 10km/h</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    );
   }
 }
