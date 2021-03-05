@@ -1,5 +1,6 @@
 body {
   background-color: #404040;
+  font-family: "EB Garamond", serif;
 }
 
 .App {
@@ -30,7 +31,6 @@ font-family: 'Parisienne', cursive;*/
 }
 
 h1 {
-  font-family: "EB Garamond", serif;
   text-align: left;
   font-weight: 400;
   color: #666666;
@@ -39,13 +39,11 @@ h1 {
 }
 
 h2 {
-  font-family: "EB Garamond", serif;
   color: #404040;
   font-size: 38px;
 }
 
 h3 {
-  font-family: "EB Garamond", serif;
   margin-top: 10px;
   font-size: 24px;
   color: #404040;
@@ -53,12 +51,10 @@ h3 {
 }
 
 h5 {
-  font-family: "Parisienne", cursive;
   font-size: 22px;
 }
 
 p {
-  font-family: "EB Garamond", serif;
   font-size: 24px;
   text-align: left;
 }
@@ -68,7 +64,6 @@ ul {
 }
 
 li {
-  font-family: "EB Garamond", serif;
   margin-top: 5px;
   font-size: 24px;
   line-height: 36px;
@@ -79,13 +74,13 @@ li {
 }
 
 .Units {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 36px;
   color: #4f487e;
 }
 
 .Light {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 36px;
   color: rgb(184, 181, 181);
 }
@@ -100,7 +95,6 @@ a:hover {
 }
 
 .Five-day {
-  font-family: "EB Garamond", serif;
   font-size: 18px;
   border-top: 1px solid #a0a0a0;
   border-bottom: 2px solid #a0a0a0;
@@ -121,7 +115,6 @@ a:hover {
 }
 
 label {
-  font-family: "EB Garamond", serif;
   display: block;
   width: 100%;
   color: #666;
@@ -132,7 +125,6 @@ label {
 }
 
 input {
-  font-family: "EB Garamond", serif;
   width: 100%;
   color: #666;
   padding: 12px 20px;
