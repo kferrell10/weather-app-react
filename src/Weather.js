@@ -36,17 +36,19 @@ export default function Weather() {
 
   let form = (
     <form onSubmit={handleSubmit}>
-      <div className="row Weather">
-        <div className="col-9">
-          <input
+      <div className="Weather">
+        <div className="row">
+          <div className="col-9">
+            <input
             type="search"
             placeholder="type a city name"
             autoFocus={true}
             onChange={updateCity}
-          />
-        </div>
-        <div className="col-3">
-          <input type="submit" value="Search" className="btn btn-primary" />
+            />
+          </div>
+          <div className="col-3">
+            <input type="submit" value="Search" className="btn btn-primary" />
+          </div>
         </div>
       </div>
     </form>
