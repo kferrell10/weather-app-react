@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./App.css";
 
-export default function Weather() {
+export default function Weather(props) {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
   let [weather, setWeather] = useState({});
@@ -85,7 +85,7 @@ export default function Weather() {
           {form}
             <div className="row">
               <div className="col-6">
-                <p>The weather in {city} is:</p>
+                <p>The weather in {city.props} is:</p>
                 <h1> {Math.round(weather.temperature)}˚C</h1>
               </div>
               <div className="col-6">
