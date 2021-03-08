@@ -76,10 +76,33 @@ export default function Weather() {
               </div>
             </div>
         </div>
-
       </div>
     );
   } else {
-    return form;
+    return (
+      <div className="row">
+        <div className="col-12">
+          {form}
+            <div className="row">
+              <div className="col-6">
+                <p>The weather in {city} is:</p>
+                <h1> {Math.round(weather.temperature)}˚C</h1>
+              </div>
+              <div className="col-6">
+                <img src={weather.icon} alt={weather.description} />
+                <p>{weather.description}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">  
+                <ul className="weatherReport">
+                  <li>Humidity: {weather.humidity}%</li>
+                  <li>Wind: {weather.wind}km/h</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    )
   }
 }
