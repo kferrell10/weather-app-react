@@ -9,12 +9,12 @@ h1 {
   text-align: left;
   font-weight: 400;
   color: #666666;
-  font-size: 90px;
+  font-size: 60px;
 }
 
 h2 {
   color: #404040;
-  font-size: 38px;
+  font-size: 30px;
 }
 
 h3 {
@@ -45,13 +45,13 @@ li {
 .Unit {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
     sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   color: #4f487e;
 }
 
 .Light {
   font-family: Arial, sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   color: rgb(184, 181, 181);
 }
 
@@ -68,10 +68,6 @@ a:hover {
   font-size: 18px;
   border-top: 1px solid #a0a0a0;
   border-bottom: 2px solid #a0a0a0;
-}
-
-.Indent {
-  padding-left: 25px;
 }
 
 .row {
@@ -97,7 +93,7 @@ label {
 input {
   width: 100%;
   color: #666;
-  padding: 6px 20px;
+  padding: 6px;
   margin: 0px 8px;
   border: 1px solid #bebdbd;
   border-radius: 5px;
