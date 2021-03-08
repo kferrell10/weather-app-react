@@ -9,8 +9,7 @@ h1 {
   text-align: left;
   font-weight: 400;
   color: #666666;
-  margin: 0;
-  font-size: 130px;
+  font-size: 90px;
 }
 
 h2 {
@@ -22,7 +21,6 @@ h3 {
   margin-top: 10px;
   font-size: 24px;
   color: #404040;
-  padding: 0px;
 }
 
 h5 {
@@ -32,10 +30,6 @@ h5 {
 p {
   font-size: 24px;
   text-align: left;
-}
-
-ul {
-  padding-left: 0;
 }
 
 li {
@@ -49,7 +43,8 @@ li {
 }
 
 .Unit {
-  font-family: Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    sans-serif;
   font-size: 36px;
   color: #4f487e;
 }
