@@ -1,13 +1,136 @@
-body {
+/* font-family: 'EB Garamond', serif;
+font-family: 'Great Vibes', cursive; 
+font-family: 'Parisienne', cursive;*/
+
+h1 {
+  text-align: left;
+  font-weight: 400;
+  color: #666666;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 130px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h2 {
+  color: #404040;
+  font-size: 38px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #404040;
+  padding: 0px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 24px;
+  text-align: left;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  margin-top: 5px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404040;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.Units {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #4f487e;
+}
+
+.Light {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: rgb(184, 181, 181);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(184, 181, 181);
+}
+
+a:hover {
+  color: rgba(8, 4, 61, 0.692);
+}
+
+.Five-day {
+  font-size: 18px;
+  border-top: 1px solid #a0a0a0;
+  border-bottom: 2px solid #a0a0a0;
+}
+
+.Indent {
+  padding-left: 25px;
+}
+
+.row {
+  margin: 20px 0px;
+  padding: 5px 0;
+}
+
+.black {
+  background-color: #404040;
+  color: #fff;
+}
+
+label {
+  display: block;
+  width: 100%;
+  color: #666;
+  padding: 5px;
+  margin: 5px 8px;
+  font-variant-caps: all-petite-caps;
+  letter-spacing: 2px;
+}
+
+input {
+  width: 100%;
+  color: #666;
+  padding: 12px 20px;
+  margin: 0px 8px;
+  border: 1px solid #bebdbd;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-variant-caps: all-petite-caps;
+  letter-spacing: 2px;
+}
+
+footer {
+  background-color: #404040;
+}
+
+p.Mousetype {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a0a0a0;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+p.Mousetype a {
+  color: #638068;
+  text-decoration: none;
+}
+
+p.Mousetype a:hover {
+  color: #46b859;
+  text-decoration: none;
 }
