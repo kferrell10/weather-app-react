@@ -41,7 +41,7 @@ p {
 }
 
 p.weatherDescription {
-  font-family: cursive;
+  color: #a0a0a0;
 }
 
 li {
