@@ -44,6 +44,11 @@ p.weatherDescription {
   padding-top: 10px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   font-size: 18px;
   line-height: 24px;
