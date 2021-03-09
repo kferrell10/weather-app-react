@@ -45,12 +45,11 @@ p.weatherDescription {
 }
 
 li {
-  margin-top: 5px;
   font-size: 18px;
   line-height: 24px;
   color: #404040;
-  padding: 0px;
-  text-align: center;
+  padding-bottom: 5px;
+  text-align: left;
   text-decoration: none;
   list-style-type: none;
 }
@@ -70,7 +69,7 @@ li.Temperature {
   color: #4f487e;
   position: relative;
   line-height: 1;
-  top: -25px;
+  top: -27px;
   margin-left: 2px;
 }
 
@@ -81,7 +80,7 @@ li.Temperature {
   padding: 0 0 0 3px;
   position: relative;
   line-height: 1;
-  top: -25px;
+  top: -27px;
 }
 
 a {
