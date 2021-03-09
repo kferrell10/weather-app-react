@@ -60,7 +60,8 @@ export default function Weather(props) {
             <div className="row">
               <div className="col-6">
                 <p>The weather in {city} is:</p>
-                <h1> {Math.round(weather.temperature)}˚<span className="Unit">C</span></h1>
+                <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
+                <p>Sunday, March 8</p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
