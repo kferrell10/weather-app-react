@@ -5,12 +5,13 @@ import "./index.css";
 
 export default function Weather(props) {
   let [city, setCity] = useState("");
-  let [loaded, setLoaded] = useState(false);
-  let [weather, setWeather] = useState({});
+ // let [loaded, setLoaded] = useState(false);
+  let [weather, setWeather] = useState({ ready: false });
 
   function displayWeather(response) {
     setLoaded(true);
     setWeather({
+      ready: true,
       city: response.data.name,
       date: newDate(response.data.dt * 1000),
       temperature: response.data.main.temp,
@@ -53,16 +54,16 @@ export default function Weather(props) {
     </form>
   );
 
-  if (loaded) {
+  if (weatherData.ready) {
     return (
       <div className="row">
         <div className="col-12">
           {form}
             <div className="row">
               <div className="col-6">
-                <p>The weather in {city} is:</p>
+                <p>The weather in {weather.city} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p>{date}</p>
+                <p>{weather.date}</p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
@@ -89,11 +90,11 @@ export default function Weather(props) {
               <div className="col-6">
                 <p>The weather in {props.defaultCity} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p>{date}</p>
+                <p>{weather.date}</p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
-                <p>{weather.description}</p>
+                <p className="text-capitalize">{weather.description}</p>
               </div>
             </div>
             <div className="row">
