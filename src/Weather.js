@@ -61,7 +61,7 @@ export default function Weather(props) {
           {form}
             <div className="row">
               <div className="col-6">
-                <p>The weather in {weather.city} is:</p>
+                <p>Today's weather in {weather.city} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">/</span><span className="Unit">˚F</span></h1>
                 <p><FormatDate date={weather.date} /></p>
               </div>
@@ -88,7 +88,7 @@ export default function Weather(props) {
           {form}
             <div className="row">
               <div className="col-6">
-                <p>The weather in {props.defaultCity} is:</p>
+                <p>Today's weather in {props.defaultCity} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
                 <p>{" "}</p>
               </div>
