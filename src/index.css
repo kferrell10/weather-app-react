@@ -43,15 +43,27 @@ p {
   padding: 0 0 0 10px;
 }
 
+p.weatherDescription {
+  text-align: center;
+}
+
 li {
   margin-top: 5px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 24px;
   color: #404040;
   padding: 0px;
   text-align: center;
   text-decoration: none;
   list-style-type: none;
+}
+
+li.Temperature {
+  text-align: left;
+  padding-left: 10px;
+  font-weight: 400;
+  color: #666666;
+  font-size: 60px;
 }
 
 .Unit {

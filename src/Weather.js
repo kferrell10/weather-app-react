@@ -61,9 +61,11 @@ export default function Weather(props) {
           {form}
             <div className="row">
               <div className="col-6">
-                <p>Today's weather in {weather.city} is:</p>
-                <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">/</span><span className="Unit">˚F</span></h1>
-                <p><FormatDate date={weather.date} /></p>
+                <ul>
+                  <li>The weather in {weather.city} is:</li>
+                  <li className="Temperature">{Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">/</span><span className="Unit">˚F</span></li>
+                  <li><FormatDate date={weather.date} /></li>
+                </ul>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
@@ -87,16 +89,21 @@ export default function Weather(props) {
         <div className="col-12">
           {form}
             <div className="row">
+              
               <div className="col-6">
-                <p>Today's weather in {props.defaultCity} is:</p>
-                <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p>{" "}</p>
+                <ul>
+                  <li>Today's weather in {props.defaultCity} is:</li>
+                  <li className="Temperature">{Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></li>
+                  <li>{" "}</li>
+                </ul>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
-                <p className="text-capitalize">{weather.description}</p>
+                <p className="text-capitalize weatherDescription">{weather.description}</p>
               </div>
+
             </div>
+            
             <div className="row">
               <div className="col-12">  
                 <ul className="weatherReport">
@@ -105,6 +112,7 @@ export default function Weather(props) {
                 </ul>
               </div>
             </div>
+
         </div>
       </div>
     )
