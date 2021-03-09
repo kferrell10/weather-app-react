@@ -62,12 +62,12 @@ export default function Weather(props) {
             <div className="row">
               <div className="col-6">
                 <p>The weather in {weather.city} is:</p>
-                <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p><FormatDate date={weatherData.date} /></p>
+                <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">/</span><span className="Unit">˚F</span></h1>
+                <p><FormatDate date={weather.date} /></p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
-                <p>{weather.description}</p>
+                <p className="text-capitalize">{weather.description}</p>
               </div>
             </div>
             <div className="row">

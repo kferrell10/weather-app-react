@@ -59,12 +59,20 @@ li {
     sans-serif;
   font-size: 24px;
   color: #4f487e;
+  position: relative;
+  line-height: 1;
+  top: -30px;
+  margin-left: 2px;
 }
 
 .Light {
   font-family: Arial, sans-serif;
   font-size: 24px;
   color: rgb(184, 181, 181);
+  padding: 0 0 0 3px;
+  position: relative;
+  line-height: 1;
+  top: -30px;
 }
 
 a {
