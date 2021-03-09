@@ -6,7 +6,6 @@ import "./index.css";
 
 export default function Weather(props) {
   let [city, setCity] = useState("");
- // let [loaded, setLoaded] = useState(false);
   let [weather, setWeather] = useState({ ready: false });
 
   function displayWeather(response) {
@@ -84,37 +83,10 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    return (
-      <div className="row">
-        <div className="col-12">
-          {form}
-            <div className="row">
-              
-              <div className="col-6">
-                <ul>
-                  <li>The weather in {props.defaultCity} is:</li>
-                  <li className="Temperature">{Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></li>
-                  <li>{" "}</li>
-                </ul>
-              </div>
-              <div className="col-6">
-                <img src={weather.icon} alt={weather.description} />
-                <p className="text-capitalize weatherDescription">{weather.description}</p>
-              </div>
-
-            </div>
-            
-            <div className="row">
-              <div className="col-12">  
-                <ul className="weatherReport">
-                  <li>Humidity: {weather.humidity}%</li>
-                  <li>Wind: {weather.wind}km/h</li>
-                </ul>
-              </div>
-            </div>
-
-        </div>
-      </div>
-    )
+    const apiKey = "f3711ec096b8e2b5d745c777afc03d71";
+    let city = "London";
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(displayWeather);
   }
 }
