@@ -12,6 +12,7 @@ export default function Weather(props) {
     setLoaded(true);
     setWeather({
       city: response.data.name,
+      date: "Sunday, March 8",
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -61,7 +62,7 @@ export default function Weather(props) {
               <div className="col-6">
                 <p>The weather in {city} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p>Sunday, March 8</p>
+                <p>{date}</p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
@@ -88,7 +89,7 @@ export default function Weather(props) {
               <div className="col-6">
                 <p>The weather in {props.defaultCity} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p>Sunday, March 8</p>
+                <p>{date}</p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
