@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 
 import "./index.css";
 
@@ -9,11 +10,10 @@ export default function Weather(props) {
   let [weather, setWeather] = useState({ ready: false });
 
   function displayWeather(response) {
-    setLoaded(true);
     setWeather({
       ready: true,
       city: response.data.name,
-      date: newDate(response.data.dt * 1000),
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -48,13 +48,13 @@ export default function Weather(props) {
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input type="submit" value="Search" className="btn btn-primary w-100" />
           </div>
        </div>
     </form>
   );
 
-  if (weatherData.ready) {
+  if (weather.ready) {
     return (
       <div className="row">
         <div className="col-12">
@@ -63,7 +63,7 @@ export default function Weather(props) {
               <div className="col-6">
                 <p>The weather in {weather.city} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p>{weather.date}</p>
+                <p><FormatDate date={weatherData.date} /></p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
@@ -90,7 +90,7 @@ export default function Weather(props) {
               <div className="col-6">
                 <p>The weather in {props.defaultCity} is:</p>
                 <h1> {Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></h1>
-                <p>{weather.date}</p>
+                <p>{" "}</p>
               </div>
               <div className="col-6">
                 <img src={weather.icon} alt={weather.description} />
