@@ -92,7 +92,7 @@ export default function Weather(props) {
               
               <div className="col-6">
                 <ul>
-                  <li>Today's weather in {props.defaultCity} is:</li>
+                  <li>The weather in {props.defaultCity} is:</li>
                   <li className="Temperature">{Math.round(weather.temperature)}<span className="Unit">˚C</span><span className="Light">|</span><span className="Unit">˚F</span></li>
                   <li>{" "}</li>
                 </ul>

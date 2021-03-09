@@ -12,6 +12,7 @@ body {
 img {
   width: 60px;
   height: 60px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -31,10 +32,6 @@ h3 {
   margin-top: 10px;
   font-size: 24px;
   color: #404040;
-}
-
-h5 {
-  font-size: 22px;
 }
 
 p {
@@ -60,7 +57,7 @@ li {
 
 li.Temperature {
   text-align: left;
-  padding-left: 10px;
+  padding: 10px 0;
   font-weight: 400;
   color: #666666;
   font-size: 60px;
