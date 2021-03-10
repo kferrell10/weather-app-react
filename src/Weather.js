@@ -12,12 +12,12 @@ export default function Weather(props) {
     setWeather({
       ready: true,
       city: response.data.name,
-      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      description: response.data.weather[0].description,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     });
   }
 
