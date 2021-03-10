@@ -9,7 +9,9 @@ export default function WeatherInfo(props) {
                 <ul>
                   <li>The weather in {props.data.city} is:</li>
                   <li className="Temperature">{Math.round(props.data.temperature)}<span className="Unit">˚C</span><span className="Light">/</span><span className="Unit">˚F</span></li>
-                  <li><FormatDate date={props.data.date} /></li>
+                  <li>
+                      <FormatDate date={props.data.date} />
+                  </li>
                 </ul>
               </div>
               <div className="col-6">
