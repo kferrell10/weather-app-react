@@ -14,7 +14,7 @@ export default function Weather(props) {
       city: response.data.name,
       temperature: response.data.main.temp,
       date: new Date(response.data.dt * 1000),
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       wind: response.data.wind,
       humidity: response.data.main.humidity,
@@ -26,7 +26,8 @@ export default function Weather(props) {
     search();
   }
 
-  // https://api.openweathermap.org/data/2.5/weather?q=London&appid=f3711ec096b8e2b5d745c777afc03d71&units=Metric
+  // https://api.openweathermap.org/data/2.5/weather?q=London&appid=f3711ec096b8e2b5d745c777afc03d71&units=Metric 
+  // `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
 
   function updateCity(event) {
     setCity(event.target.value);
