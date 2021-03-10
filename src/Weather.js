@@ -11,13 +11,14 @@ export default function Weather(props) {
   function displayWeather(response) {
     setWeather({
       ready: true,
-      city: response.data.name,
+      
       temperature: response.data.main.temp,
       date: new Date(response.data.dt * 1000),
-      icon: (`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`),
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
       wind: response.data.wind,
       humidity: response.data.main.humidity,
+      city: response.data.name,
     });
   }
 
