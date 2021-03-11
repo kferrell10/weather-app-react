@@ -6,7 +6,7 @@ body {
 }
 
 .Container {
-  padding: 0 20px 30px 5px;
+  padding: 0 20px 5px 5px;
   margin: 0 auto;
 }
 
@@ -101,7 +101,6 @@ a:hover {
 .weatherReport {
   font-size: 18px;
   padding: 20px 0;
-  border-bottom: 1px solid #a0a0a0;
   text-align: center;
 }
 
@@ -148,6 +147,8 @@ p.Mousetype {
   font-variant-caps: all-small-caps;
   letter-spacing: 2px;
   text-align: center;
+  padding: 5px 10px;
+  margin: 0 auto;
 }
 
 p.Mousetype a {
