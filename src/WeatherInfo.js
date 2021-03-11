@@ -2,7 +2,6 @@ import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherForecast from "./WeatherForecast";
 
-
 export default function WeatherInfo(props) {
     return (
         <div className="WeatherInfo">
