@@ -60,12 +60,13 @@ li {
   list-style-type: none;
 }
 
-li.Temperature {
+.Temperature {
   text-align: left;
   padding: 20px 0 10px 0;
   font-weight: 400;
   color: #666666;
   font-size: 70px;
+  line-height: 70px;
 }
 
 .Unit {
