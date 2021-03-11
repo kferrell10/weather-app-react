@@ -1,7 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherTemperature from "./WeatherTemperature"
-import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
     return (
@@ -24,9 +23,6 @@ export default function WeatherInfo(props) {
                 <img src={props.data.icon} alt={props.data.description} />
                 <p className="text-capitalize">{props.data.description}</p>
               </div>
-          </div>
-          <div className="WeatherForecast">
-            <WeatherForecast />
           </div>
         </div>
     );
