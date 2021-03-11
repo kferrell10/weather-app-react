@@ -1,5 +1,7 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import WeatherForecast from "./WeatherForecast";
+
 
 export default function WeatherInfo(props) {
     return (
@@ -12,6 +14,8 @@ export default function WeatherInfo(props) {
                   <li>
                       <FormatDate date={props.data.date} />
                   </li>
+                  <li>Humidity: {props.data.humidity}%</li>
+                  <li>Wind: {Math.round(props.data.wind)} km/h</li>
                 </ul>
               </div>
               <div className="col-6">
@@ -19,13 +23,8 @@ export default function WeatherInfo(props) {
                 <p className="text-capitalize">{props.data.description}</p>
               </div>
           </div>
-          <div className="row">
-              <div className="col-12">  
-                <ul className="weatherReport">
-                  <li>Humidity: {props.data.humidity}%</li>
-                  <li>Wind: {Math.round(props.data.wind)} km/h</li>
-                </ul>
-              </div>
+          <div>
+            <WeatherForecast />
           </div>
         </div>
     );

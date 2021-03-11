@@ -28,7 +28,6 @@ export default function Weather(props) {
   }
 
   // https://api.openweathermap.org/data/2.5/weather?q=London&appid=f3711ec096b8e2b5d745c777afc03d71&units=Metric 
-  // `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`, previously rendered icon in setWeather!
 
   function updateCity(event) {
     setCity(event.target.value);
