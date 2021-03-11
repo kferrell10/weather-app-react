@@ -80,6 +80,11 @@ li {
   margin-left: 2px;
 }
 
+.Unit a:hover {
+  text-decoration: none;
+  color: rgb(13, 146, 163);
+}
+
 .Light {
   font-family: Arial, sans-serif;
   font-size: 20px;
