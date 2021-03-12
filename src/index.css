@@ -10,10 +10,9 @@ body {
   margin: 0 auto;
 }
 
-img {
-  width: 95px;
-  height: 95px;
-  margin: 0 auto;
+.Weather canvas {
+  margin: 5px auto;
+  display: inline-block;
 }
 
 h1 {

@@ -16,7 +16,7 @@ export default function Weather(props) {
       
       temperature: response.data.main.temp,
       date: new Date(response.data.dt * 1000),
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -61,7 +61,7 @@ export default function Weather(props) {
             </div>
           </form>           
           <WeatherInfo data={weather} />
-          <WeatherForecast />
+          <WeatherForecast city={weather.city} />
       </div> // closes weather div
     );
   } else {
