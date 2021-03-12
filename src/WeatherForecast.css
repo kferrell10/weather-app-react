@@ -1,9 +1,8 @@
 .WeatherForecast {
-  display: block;
-  margin: 5px auto;
   text-align: center;
 }
 
-.WeatherForecast icon {
+.WeatherForecast canvas {
   display: block;
+  margin: 5px auto;
 }
