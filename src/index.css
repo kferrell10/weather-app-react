@@ -6,13 +6,22 @@ body {
 }
 
 .Container {
-  padding: 0 20px 5px 5px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+form {
+  padding: 0;
   margin: 0 auto;
 }
 
 .Weather canvas {
   margin: 5px auto;
   display: inline-block;
+}
+
+.WeatherInfo {
+  margin-bottom: 0;
 }
 
 h1 {
