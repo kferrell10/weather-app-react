@@ -71,9 +71,10 @@ li {
 
 li.citySearch {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 400;
   font-variant-caps: all-petite-caps;
+  letter-spacing: 1px;
 }
 
 .Temperature {
@@ -81,34 +82,34 @@ li.citySearch {
   padding: 20px 0 10px 0;
   font-weight: 400;
   color: #666666;
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 90px;
+  line-height: 90px;
 }
 
 .Unit {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
-    sans-serif;
-  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
   color: #4f487e;
   position: relative;
   line-height: 1;
-  top: -27px;
+  top: -40px;
   margin-left: 2px;
 }
 
 .Unit a:hover {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
   color: rgb(13, 146, 163);
 }
 
 .Light {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
   color: rgb(184, 181, 181);
   padding: 0 0 0 3px;
   position: relative;
   line-height: 1;
-  top: -27px;
+  top: -40px;
 }
 
 .formatDate {
