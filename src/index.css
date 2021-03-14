@@ -22,6 +22,7 @@ form {
 
 .WeatherInfo {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 h1 {
@@ -49,8 +50,8 @@ p {
 }
 
 p.weatherDescription {
-  color: #a0a0a0;
-  padding-top: 10px;
+  font-style: italic;
+  color: #7c7777;
 }
 
 ul {
@@ -61,7 +62,7 @@ ul {
 li {
   font-size: 20px;
   line-height: 24px;
-  color: #404040;
+  color: #5f595d;
   padding-bottom: 5px;
   text-align: left;
   text-decoration: none;
