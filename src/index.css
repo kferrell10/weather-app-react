@@ -147,15 +147,13 @@ label {
   color: #666;
   padding: 5px;
   margin: 5px 8px;
-  font-variant-caps: all-petite-caps;
-  letter-spacing: 2px;
 }
 
 input {
   width: 100%;
   color: #666;
   padding: 6px;
-  margin: 0px 8px;
+  margin: 0px auto;
   border: 1px solid #bebdbd;
   border-radius: 5px;
 }
