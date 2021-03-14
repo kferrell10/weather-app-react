@@ -68,6 +68,13 @@ li {
   list-style-type: none;
 }
 
+li.citySearch {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-variant-caps: all-petite-caps;
+}
+
 .Temperature {
   text-align: left;
   padding: 20px 0 10px 0;
@@ -101,6 +108,10 @@ li {
   position: relative;
   line-height: 1;
   top: -27px;
+}
+
+.formatDate {
+  line-height: 30px;
 }
 
 a {

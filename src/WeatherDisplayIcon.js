@@ -5,7 +5,9 @@ import CLEAR_DAY from "./images/CLEAR_DAY.png";
 import CLEAR_NIGHT from "./images/CLEAR_NIGHT.png";
 import PARTLY_CLOUDY_DAY from "./images/PARTLY_CLOUDY_DAY.png";
 import PARTLY_CLOUDY_NIGHT from "./images/PARTLY_CLOUDY_NIGHT.png";
-import CLOUDY from "./images/CLOUDY.png";
+import CLOUDY_DAY from "./images/CLOUDY_DAY.png";
+import CLOUDY_NIGHT from "./images/CLOUDY_NIGHT.png";
+
 import RAIN from "./images/RAIN.png";
 import THUNDERSTORMS from "./images/THUNDERSTORMS.png";
 import SNOW from "./images/SNOW.png";
@@ -20,8 +22,8 @@ export default function WeatherDisplayIcon({ code, alt }) {
     "02n": PARTLY_CLOUDY_NIGHT,
     "03d": PARTLY_CLOUDY_DAY,
     "03n": PARTLY_CLOUDY_NIGHT,
-    "04d": CLOUDY,
-    "04n": CLOUDY,
+    "04d": CLOUDY_DAY,
+    "04n": CLOUDY_NIGHT,
     "09d": RAIN,
     "09n": RAIN,
     "10d": RAIN,
