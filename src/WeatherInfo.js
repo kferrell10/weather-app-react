@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
     return (
         <div className="WeatherInfo">
           <div className="row">
-              <div className="col-6">
+              <div className="col-sm-6">
                 <ul>
                   <li className="citySearch">{props.data.city}</li>
                   <li>
@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
                   <li>Wind: {Math.round(props.data.wind)} km/h</li>
                 </ul>
               </div>
-              <div className="col-6">
+              <div className="col-sm-6">
                 <WeatherDisplayIcon code={props.data.icon} />
                 <p className="weatherDescription text-capitalize">{props.data.description}</p>
               </div>

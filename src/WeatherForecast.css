@@ -4,8 +4,8 @@
   color: #5f595d;
   margin: 0 auto;
   padding-top: 0;
-  border-top: 1px solid #e2dfdf;
-  border-bottom: 1px solid #e2dfdf;
+  border-top: 2px solid rgb(241, 241, 241);;
+  border-bottom: 2px solid rgb(241, 241, 241);;
 }
 
 .WeatherForecast canvas {

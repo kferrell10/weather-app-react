@@ -47,7 +47,7 @@ export default function Weather(props) {
       <div className="Weather">
           <form onSubmit={handleSubmit}>
             <div className="row">
-              <div className="col-9">
+              <div className="col-sm-9">
                 <input
                   type="search"
                   placeholder="Type a city name..."
@@ -55,13 +55,14 @@ export default function Weather(props) {
                   onChange={updateCity}
                 />
               </div>
-              <div className="col-3">
+              <div className="col-sm-3">
                 <input type="submit" value="Search" className="btn btn-primary w-100" />
               </div>
             </div>
           </form>           
           <WeatherInfo data={weather} />
           <WeatherForecast city={weather.city} />
+          <p className="Mousetype"><a href="https://github.com/kferrell10/weather-app-react" target="_blank" rel="noreferrer">Open-source code on github</a> by <a href="https://kimferrelldesign.com/" target="_blank" rel="noreferrer">Kim Ferrell</a></p>
       </div> // closes weather div
     );
   } else {
