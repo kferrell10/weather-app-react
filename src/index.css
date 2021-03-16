@@ -15,22 +15,17 @@ form {
   margin: 0 auto;
 }
 
-.Weather canvas {
-  margin: 5px auto;
-  display: inline-block;
-}
-
 .WeatherInfo {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 h1 {
-  text-align: left;
-  padding-left: 10px;
-  font-weight: 400;
   color: #666666;
   font-size: 60px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 10px;
 }
 
 h2 {
@@ -39,9 +34,9 @@ h2 {
 }
 
 h3 {
-  margin-top: 10px;
-  font-size: 24px;
   color: #404040;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
 p {
@@ -118,27 +113,16 @@ li.citySearch {
 
 a {
   text-decoration: none;
-  color: rgb(184, 181, 181);
+  color: #a0a0a0;
 }
 
 a:hover {
-  color: rgba(8, 4, 61, 0.692);
-}
-
-.weatherReport {
-  font-size: 18px;
-  padding: 20px 0;
-  text-align: center;
+  color: rgba(224, 105, 26, 0.747);
 }
 
 .row {
   margin: 20px 0px;
   padding: 5px 0;
-}
-
-.black {
-  background-color: #404040;
-  color: #fff;
 }
 
 label {
@@ -154,7 +138,7 @@ input {
   color: #666;
   padding: 6px;
   margin: 0px auto;
-  border: 1px solid #bebdbd;
+  border: 2px solid #bdb5b5;
   border-radius: 5px;
 }
 
@@ -170,18 +154,18 @@ p.Mousetype {
   font-weight: 400;
   color: #a0a0a0;
   font-variant-caps: all-small-caps;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   padding: 5px 10px;
   margin: 0 auto;
 }
 
 p.Mousetype a {
-  color: #638068;
+  color: #a0a0a0;
   text-decoration: none;
 }
 
 p.Mousetype a:hover {
-  color: #46b859;
+  color: #375668;
   text-decoration: none;
 }

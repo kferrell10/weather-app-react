@@ -3,11 +3,13 @@
   text-align: center;
   color: #5f595d;
   margin: 0 auto;
-  padding-top: 0;
+  padding: 0;
   border-top: 2px solid rgb(241, 241, 241);;
   border-bottom: 2px solid rgb(241, 241, 241);;
 }
 
 .WeatherForecast canvas {
   display: block;
+  padding: 0;
+  margin: 0 auto;
 }
